@@ -1,5 +1,5 @@
 var name = prompt("Ingresa tu nombre");
-document.getElementById("nombre").innerHTML = "Hola coder " + name;
+document.getElementById("nombre").innerHTML = "Hola coder " + name + "!";
 function myFunction() {
 	document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -50,7 +50,7 @@ var quiz1 = function (value) {
 		buenas.push(1);
 	}
 boton.addEventListener("click", function(){
-	q1.innerHTML =  "<h3>Quiz</h3>" + buenas.length+ " respuesta(s) correcta(s)";
+	q1.innerHTML =  "<h3>Quiz</h3>" + buenas.length+ " respuesta(s) correcta(s)" + "<br>";
 })}
 
 var quiz2 = function (value) {
@@ -65,7 +65,7 @@ var quiz2 = function (value) {
 		buenas1.push(1);
 	}
 boton2.addEventListener("click", function(){
-	q2.innerHTML =  "<h3>Quiz</h3>" + buenas1.length+ " respuesta(s) correcta(s)";
+	q2.innerHTML =  "<h3>Quiz</h3>" + buenas1.length+ " respuesta(s) correcta(s)" + "<br>";
 })}
 
 document.getElementById("form").onsubmit=function(e){
