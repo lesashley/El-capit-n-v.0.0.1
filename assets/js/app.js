@@ -1,5 +1,5 @@
 var name = prompt("Ingresa tu nombre");
-document.getElementById("nombre").innerHTML = "Hola " + name;
+document.getElementById("nombre").innerHTML = "Hola coder " + name;
 function myFunction() {
 	document.getElementById("myDropdown").classList.toggle("show");
 }

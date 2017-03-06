@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Coders</title>
+
+</head>
+<body>
+<div class="" id="show">
+<button type="button" name="button">Regresar al inicio</button>
+</div>
+  <script type="text/javascript">
+  var mostrar = "";
+  var coders = [ { nombre : "Meche", apellido : "Zubieta",  promocion : "1era. promoción", estado : "Trabajando" },
+			 { nombre : "Arabela", apellido : "Rojas", promocion : "2da. promoción", estado : "Trabajando" },
+			 { nombre : "Maria", apellido : "Rosán",  promocion : "2da. promoción", estado : "Trabajando" },
+			 { nombre : "Guadalupe", apellido : "Racio",  promocion : "3era. promoción", estado : "Trabajando" },
+			 { nombre : "Sara", apellido : "Casa",  promocion : "3era. promoción", estado : "Trabajando" },
+			 { nombre : "Daniella", apellido : "Durán",  promocion : "4ta. promoción", estado : "Trabajando" },
+			 { nombre : "Michelle", apellido : "Seguil",  promocion : "5ta. promoción", estado : "Trabajando" },
+			 { nombre : "Diana", apellido : "Navarro",  promocion : "5ta. promoción", estado : "Trabajando" } ];
+    coders.forEach(function (e) {
+      mostrar += "Nombre: " + e.nombre +"<br>"+"Apellido: " + e.apellido + "<br>"+
+                 "Promoción: " + e.promocion + "<br>" + "Estado: " + e.estado+"<br></br>";
+    });
+    document.getElementById("show").innerHTML = mostrar;
+  </script>
+</body>
+</html>
