@@ -1,9 +1,10 @@
+//Ingreso del nombre del dropdown
 var name = prompt("Ingresa tu nombre");
 document.getElementById("nombre").innerHTML = "Hola coder " + name + "!";
-function myFunction() {
-	document.getElementById("myDropdown").classList.toggle("show");
-}
-
+	function myFunction() {
+		document.getElementById("myDropdown").classList.toggle("show");
+	}
+//Dropdown
 window.onclick = function(event) {
 	if (!event.target.matches('.dropbtn')) {
 
@@ -17,6 +18,7 @@ window.onclick = function(event) {
 		}
 	}
 }
+//Mostrar y ocultar datos de los botones
 var mostrar= function(div) {
 	var text1 = document.getElementById("text1");
   var text2 = document.getElementById("text2");
@@ -36,14 +38,16 @@ var mostrar= function(div) {
     text3.style.display = "block";
   }
 }
+//Arrays que contaran las preguntas
 var buenas =[];
 var buenas1 =[];
+//Funcion para calcular respuestas del quiz1
 var quiz1 = function (value) {
 	var q1 = document.getElementById("quiz1");
 	var boton = document.getElementById("submit1");
 	if(value == "Expresadas y declaradas"){
 		buenas.push(1);}
-	if(value == "add"){
+	if(value == "pop"){
 		buenas.push(1);
 	}
 	if(value == "propiedades y valores"){
@@ -52,7 +56,7 @@ var quiz1 = function (value) {
 boton.addEventListener("click", function(){
 	q1.innerHTML =  "<h3>Quiz</h3>" + buenas.length+ " respuesta(s) correcta(s)" + "<br>";
 })}
-
+//Funcion para calcular respuestas del quiz2
 var quiz2 = function (value) {
 	var q2 = document.getElementById("quiz2");
 	var boton2 = document.getElementById("submit2");
@@ -67,7 +71,7 @@ var quiz2 = function (value) {
 boton2.addEventListener("click", function(){
 	q2.innerHTML =  "<h3>Quiz</h3>" + buenas1.length+ " respuesta(s) correcta(s)" + "<br>";
 })}
-
+//
 document.getElementById("form").onsubmit=function(e){
   e.preventDefault();
 }
