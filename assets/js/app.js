@@ -18,20 +18,38 @@ var mostrar= function(div) {
     text3.style.display = "block";
   }
 }
-
-//var quiz2 = document.getElementById("quiz2");
+var buenas =[];
+var buenas1 =[];
 var quiz1 = function (value) {
-	var buenas =0;
-	var malas =0;
 	var q1 = document.getElementById("quiz1");
 	var boton = document.getElementById("submit1");
-	var pregunta1 = document.getElementsByClassName("n011");
-	if(pregunta1.value == "Expresadas y declaradas"){
-		buenas++;
-	} else{
-		malas =0;
+	if(value == "Expresadas y declaradas"){
+		buenas.push(1);}
+	if(value == "add"){
+		buenas.push(1);
 	}
-	q1.innerHTML = "fjdgdjkg";
+	if(value == "propiedades y valores"){
+		buenas.push(1);
+	}
+boton.addEventListener("click", function(){
+	q1.innerHTML =  "<h3>Quiz</h3>" + buenas.length+ " respuesta(s) correcta(s)";
+})}
 
+var quiz2 = function (value) {
+	var q2 = document.getElementById("quiz2");
+	var boton2 = document.getElementById("submit2");
+	if(value == "git init"){
+		buenas1.push(1);}
+	if(value == "Comprobar que el código funciona correctamente"){
+		buenas1.push(1);
+	}
+	if(value == "Document Object Model"){
+		buenas1.push(1);
+	}
+boton2.addEventListener("click", function(){
+	q2.innerHTML =  "<h3>Quiz</h3>" + buenas1.length+ " respuesta(s) correcta(s)";
+})}
 
+document.getElementById("form").onsubmit=function(e){
+  e.preventDefault();
 }
