@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Laboratoria</title>
+  <link rel="stylesheet" href="assets\css\style.css">
+</head>
+<body>
+  <form action="" >
+    <div class="" ALIGN = center>
+      <img src="assets/images/descarga.png">
+    </div>
+    <font FACE = "museo-sans">
+    <h3><strong>¿Qué es Laboratoria?</h3></strong>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+      sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h5>Temas</h5>
+      <div>
+        <button type="button" id="s1" onclick="mostrar('text1')">Sprint 1</button>
+        <button type="button" id="s2" onclick="mostrar('text2')">Sprint 2</button>
+        <button type="button" id="s3" onclick="mostrar('text3')">Sprint 3</button>
+      </div>
+      <div class="" id="text1">
+        <h4>Sprint 1: Introducción a Javascript</h4>
+        <ol>
+          <li>Fundamentos de Programación</li>
+          <li>Funciones</li>
+          <li>Arreglos</li>
+          <li>Objetos</li>
+        </ol>
+        <hr>
+        <div id="quiz1">
+          <h3>Quiz</h3>
+          <h4>Existen dos tipos de funciones</h4>
+          <input class="n011" type="radio" name="1s1" value="Expresadas y declaradas">Expresadas y declaradas<br>
+          <input class="n011" type="radio" name="1s1" value="Explícitas y declaradas">Explícitas y declaradas<br>
+          <input class="n011" type="radio" name="1s1" value="Expresadas  y derivadas">Expresadas  y derivadas<br>
+          <h4>Elije una propiedad de los arreglos</h4>
+          <input class="n012" type="radio" name="2s1" value="clear">clear<br>
+          <input class="n012" type="radio" name="2s1" value="pop">pop<br>
+          <input class="n012" type="radio" name="2s1" value="add">add<br>
+          <h4>Un objeto tiene _ _ _ _  y _ _ _ _ _ </h4>
+          <input class="n013" type="radio" name="3s1" value="números y letras">números y letras<br>
+          <input class="n013" type="radio" name="3s1" value="partes y validaciones">partes y validaciones<br>
+          <input class="n013" type="radio" name="3s1" value="propiedades y valores">propiedades y valores<br>
+          <br>
+        </div>
+        <button type="submit" id="submit1" onclick="quiz1()">Enviar</button>
+      </div>
+      <div class="" id="text2">
+        <h4>Sprint 2: Introducción al desarrollo web y construcción de páginas web</h4>
+        <ol>
+          <li>Ciclo de vida del desarrollo web y arquitectura básica cliente/servidor/configuración del ambiente de trabajo e introducción a git</li>
+          <li>HTML y Javascript en el navegador</li>
+          <li>Manejo de comandos básicos de git en la terminal</li>
+          <li>Pruebas unitarias</li>
+          <li>Git/Resolución de conflictos/Branching model</li>
+          <li>DOM</li>
+        </ol>
+        <hr>
+        <div id="quiz2">
+          <h3>Quiz</h3>
+          <h4>¿Cuál es el comando para iniciar un repositorio desde la consola</h4>
+          <input class="n021" type="radio" name="1s2" value="git init.">git init.<br>
+          <input class="n021" type="radio" name="1s2" value="git init">git init<br>
+          <input class="n021" type="radio" name="1s2" value="git init add">git init add<br>
+          <h4>¿Cuál es la finalidad de hacer una prueba unitaria</h4>
+          <input class="n022" type="radio" name="2s2" value="clear">Comprobar que el código funciona correctamente<br>
+          <input class="n022" type="radio" name="2s2" value="pop">Darle valores a los parámetros de dichas funciones<br>
+          <input class="n022" type="radio" name="2s2" value="add">No tiene ningún fin<br>
+          <h4>¿Qué significa DOM?</h4>
+          <input class="n023" type="radio" name="3s2" value="">Dual Object Model<br>
+          <input class="n023" type="radio" name="3s2" value="">Document Object Model<br>
+          <input class="n023" type="radio" name="3s2" value="">Document Obsolet Model<br>
+          <br>
+        </div>
+        <button type="submit" id="submit2">Enviar</button>
+      </div>
+      </div>
+      <div class="" id="text3">
+        <h4>Sprint 3</h4>
+        <p>No hay lecciones todavía</p>
+      </div>
+    </font>
+  </form>
+
+  <script type="text/javascript" src="assets\js\app.js">
+  </script>
+</body>
+</html>
