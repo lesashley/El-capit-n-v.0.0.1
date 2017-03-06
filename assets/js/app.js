@@ -1,4 +1,22 @@
+var name = prompt("Ingresa tu nombre");
+document.getElementById("nombre").innerHTML = "Hola coder " + name;
+function myFunction() {
+	document.getElementById("myDropdown").classList.toggle("show");
+}
 
+window.onclick = function(event) {
+	if (!event.target.matches('.dropbtn')) {
+
+		var dropdowns = document.getElementsByClassName("dropdown-content");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+			var openDropdown = dropdowns[i];
+			if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+			}
+		}
+	}
+}
 var mostrar= function(div) {
 	var text1 = document.getElementById("text1");
   var text2 = document.getElementById("text2");
