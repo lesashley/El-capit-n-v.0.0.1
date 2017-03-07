@@ -23,7 +23,6 @@ var mostrar= function(div) {
 	var text1 = document.getElementById("text1");
   var text2 = document.getElementById("text2");
   var text3 = document.getElementById("text3");
-
 	if (div == "text1") {
 		 text1.style.display = "block";
      text2.style.display = "none";
@@ -43,14 +42,15 @@ var buenas =[];
 var buenas1 =[];
 //Funcion para calcular respuestas del quiz1
 var quiz1 = function (value) {
+
 	var q1 = document.getElementById("quiz1");
 	var boton = document.getElementById("submit1");
-	if(value == "Expresadas y declaradas"){
+	if(value == "1"){
 		buenas.push(1);}
-	if(value == "pop"){
+	if(value == "2"){
 		buenas.push(1);
 	}
-	if(value == "propiedades y valores"){
+	if(value == "3"){
 		buenas.push(1);
 	}
 boton.addEventListener("click", function(){
@@ -60,12 +60,12 @@ boton.addEventListener("click", function(){
 var quiz2 = function (value) {
 	var q2 = document.getElementById("quiz2");
 	var boton2 = document.getElementById("submit2");
-	if(value == "git init"){
+	if(value == "2"){
 		buenas1.push(1);}
-	if(value == "Comprobar que el código funciona correctamente"){
+	if(value == "1"){
 		buenas1.push(1);
 	}
-	if(value == "Document Object Model"){
+	if(value == "2"){
 		buenas1.push(1);
 	}
 boton2.addEventListener("click", function(){
