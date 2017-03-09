@@ -1,13 +1,12 @@
 //Ingreso del nombre del dropdown
 var name = prompt("Ingresa tu nombre");
-document.getElementById("nombre").innerHTML = "Hola coder " + name + "!";
+document.getElementById("nombre").innerHTML = "Hola coder " + name.charAt(0).toUpperCase() + name.slice(1) + "!";
 	function myFunction() {
 		document.getElementById("myDropdown").classList.toggle("show");
 	}
 //Dropdown
 window.onclick = function(event) {
 	if (!event.target.matches('.dropbtn')) {
-
 		var dropdowns = document.getElementsByClassName("dropdown-content");
 		var i;
 		for (i = 0; i < dropdowns.length; i++) {
@@ -18,7 +17,8 @@ window.onclick = function(event) {
 		}
 	}
 }
-//Mostrar y ocultar datos de los botones
+/*
+//Mostrar y ocultar datos de los botones--> se le coloca en onclick en cada boton con id del div que corresponde
 var mostrar= function(div) {
 	var text1 = document.getElementById("text1");
   var text2 = document.getElementById("text2");
@@ -36,13 +36,34 @@ var mostrar= function(div) {
     text2.style.display = "none";
     text3.style.display = "block";
   }
-}
+}*/
+sprint = document.getElementsByName("sprint");
+var s1 = document.getElementById("text1");
+var s2 = document.getElementById("text2");
+var s3 = document.getElementById("text3");
+
+sprint[0].addEventListener("click", function(){
+	s2.style.display = "none";
+	s3.style.display = "none";
+	s1.style.display = "block";
+});
+sprint[1].addEventListener("click", function(){
+	s2.style.display = "block";
+	s3.style.display = "none";
+	s1.style.display = "none";
+});
+sprint[2].addEventListener("click", function () {
+	s2.style.display = "none";
+	s3.style.display = "block";
+	s1.style.display = "none";
+})
+
+
 //Arrays que contaran las preguntas
 var buenas =[];
 var buenas1 =[];
 //Funcion para calcular respuestas del quiz1
 var quiz1 = function (value) {
-
 	var q1 = document.getElementById("quiz1");
 	var boton = document.getElementById("submit1");
 	if(value == "1"){
